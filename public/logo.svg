@@ -1,0 +1,145 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="innerShadow">
+      <feOffset dx="0" dy="1"/>
+      <feGaussianBlur stdDeviation="1" result="offset-blur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.1"/>
+      <feComposite in2="offset-blur" operator="in"/>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main Container - Rounded Square -->
+  <rect 
+    x="8" y="8" 
+    width="84" height="84" 
+    rx="20" ry="20" 
+    fill="url(#primaryGradient)" 
+    filter="url(#innerShadow)"
+  />
+  
+  <!-- Central Processing Core -->
+  <rect 
+    x="35" y="35" 
+    width="30" height="30" 
+    rx="6" ry="6" 
+    fill="url(#accentGradient)" 
+    filter="url(#softGlow)"
+  />
+  
+  <!-- Data Flow Lines - Horizontal -->
+  <rect x="15" y="47" width="15" height="2" fill="url(#accentGradient)" opacity="0.8" rx="1"/>
+  <rect x="15" y="51" width="12" height="2" fill="url(#accentGradient)" opacity="0.6" rx="1"/>
+  
+  <rect x="70" y="47" width="15" height="2" fill="url(#accentGradient)" opacity="0.8" rx="1"/>
+  <rect x="73" y="51" width="12" height="2" fill="url(#accentGradient)" opacity="0.6" rx="1"/>
+  
+  <!-- Data Flow Lines - Vertical -->
+  <rect x="47" y="15" width="2" height="15" fill="url(#accentGradient)" opacity="0.8" rx="1"/>
+  <rect x="51" y="15" width="2" height="12" fill="url(#accentGradient)" opacity="0.6" rx="1"/>
+  
+  <rect x="47" y="70" width="2" height="15" fill="url(#accentGradient)" opacity="0.8" rx="1"/>
+  <rect x="51" y="73" width="2" height="12" fill="url(#accentGradient)" opacity="0.6" rx="1"/>
+  
+  <!-- Neural Network Nodes -->
+  <circle cx="25" cy="25" r="3" fill="url(#accentGradient)" opacity="0.9"/>
+  <circle cx="75" cy="25" r="3" fill="url(#accentGradient)" opacity="0.9"/>
+  <circle cx="25" cy="75" r="3" fill="url(#accentGradient)" opacity="0.9"/>
+  <circle cx="75" cy="75" r="3" fill="url(#accentGradient)" opacity="0.9"/>
+  
+  <!-- Secondary Nodes -->
+  <circle cx="25" cy="50" r="2" fill="url(#accentGradient)" opacity="0.7"/>
+  <circle cx="75" cy="50" r="2" fill="url(#accentGradient)" opacity="0.7"/>
+  <circle cx="50" cy="25" r="2" fill="url(#accentGradient)" opacity="0.7"/>
+  <circle cx="50" cy="75" r="2" fill="url(#accentGradient)" opacity="0.7"/>
+  
+  <!-- Connection Lines - Subtle Neural Network -->
+  <line x1="25" y1="25" x2="35" y2="35" stroke="white" stroke-width="1" opacity="0.4"/>
+  <line x1="75" y1="25" x2="65" y2="35" stroke="white" stroke-width="1" opacity="0.4"/>
+  <line x1="25" y1="75" x2="35" y2="65" stroke="white" stroke-width="1" opacity="0.4"/>
+  <line x1="75" y1="75" x2="65" y2="65" stroke="white" stroke-width="1" opacity="0.4"/>
+  
+  <line x1="25" y1="50" x2="35" y2="50" stroke="white" stroke-width="1" opacity="0.3"/>
+  <line x1="75" y1="50" x2="65" y2="50" stroke="white" stroke-width="1" opacity="0.3"/>
+  <line x1="50" y1="25" x2="50" y2="35" stroke="white" stroke-width="1" opacity="0.3"/>
+  <line x1="50" y1="75" x2="50" y2="65" stroke="white" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Central Processing Indicator -->
+  <rect 
+    x="45" y="45" 
+    width="4" height="4" 
+    fill="#7C3AED" 
+    opacity="0.8"
+    rx="1"
+  >
+    <animate 
+      attributeName="opacity" 
+      values="0.8;0.3;0.8" 
+      dur="2s" 
+      repeatCount="indefinite"
+    />
+  </rect>
+  <rect 
+    x="51" y="45" 
+    width="4" height="4" 
+    fill="#7C3AED" 
+    opacity="0.6"
+    rx="1"
+  >
+    <animate 
+      attributeName="opacity" 
+      values="0.6;0.2;0.6" 
+      dur="2s" 
+      begin="0.3s"
+      repeatCount="indefinite"
+    />
+  </rect>
+  <rect 
+    x="45" y="51" 
+    width="4" height="4" 
+    fill="#7C3AED" 
+    opacity="0.6"
+    rx="1"
+  >
+    <animate 
+      attributeName="opacity" 
+      values="0.6;0.2;0.6" 
+      dur="2s" 
+      begin="0.6s"
+      repeatCount="indefinite"
+    />
+  </rect>
+  <rect 
+    x="51" y="51" 
+    width="4" height="4" 
+    fill="#7C3AED" 
+    opacity="0.4"
+    rx="1"
+  >
+    <animate 
+      attributeName="opacity" 
+      values="0.4;0.1;0.4" 
+      dur="2s" 
+      begin="0.9s"
+      repeatCount="indefinite"
+    />
+  </rect>
+</svg>
