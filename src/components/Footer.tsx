@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import syroLogo from '../assets/images/Code-Syro-Icon-2.png';
+import syroLogo from '../assets/images/Syro-King-Logo.png';
 
 const Footer = () => {
   return (

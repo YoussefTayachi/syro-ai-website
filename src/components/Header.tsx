@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Bars3Icon, XMarkIcon, CalendarDaysIcon } from '@heroicons/react/24/outline';
-import syroLogo from '../assets/images/Code-Syro-Icon-2.png';
+import syroLogo from '../assets/images/Syro-King-Logo.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
