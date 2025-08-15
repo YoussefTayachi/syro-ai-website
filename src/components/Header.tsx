@@ -77,7 +77,7 @@ const Header = () => {
                   <img 
                     src={syroLogo} 
                     alt="Syro-AI Logo" 
-                    className="w-12 h-12"
+                    className="w-8 h-8"
                   />
                   <span className="text-2xl font-bold text-gray-900">Syro AI</span>
                 </div>
