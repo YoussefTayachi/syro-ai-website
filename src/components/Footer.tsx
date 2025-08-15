@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import syroLogo from '../assets/images/Syro-King-Logo.png';
 
 const Footer = () => {
   return (
@@ -41,14 +40,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="mb-4">
-              <div className="flex items-center space-x-2">
-                <img 
-                  src={syroLogo} 
-                  alt="Syro-AI Logo" 
-                  className="w-12 h-12"
-                />
-                <span className="text-2xl font-bold text-white">Syro AI</span>
-              </div>
+              <span className="text-2xl font-bold text-white">Syro AI</span>
             </div>
             <p className="text-gray-300 text-sm">
               We scale your business with AI – more customers, less effort.
